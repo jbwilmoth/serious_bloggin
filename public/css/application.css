@@ -7,3 +7,106 @@
 th {
   text-align: left;
 }
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: grey;
+  color: white;
+  height: 75px;
+  text-align: center;
+  z-index: 400;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.wrapper a {
+  float: right;
+  line-height: 80px;
+  color: orange;
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+  font-size: 40px;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.post {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #505050;
+  border-bottom: 1px dotted darkgrey;
+  margin-bottom: 0px;
+  width: 600px;
+  line-height: 25px;
+  min-height: 250px;
+  position: relative;
+  font-size: 11px;
+}
+
+.post h3 {
+  margin: 0px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 30px;
+  text-shadow: 0px 0px 20px #f0f0f0;
+}
+
+.post a {
+  font-size: 12px;
+  width: 50px;
+  text-align: center;
+  color: red;
+  margin-right: 5px;
+  text-decoration: none;
+  background-color: lightblue;
+  float: right;
+}
+
+#tags {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-size: 12px;
+  color: orange;
+  font-style: italic;
+  background-color: lightblue;
+  width: 100%;
+}
+
+#new_post input,textarea,label {
+  float: left;
+  clear: both;
+}
+
+#new_post textarea {
+  margin-top: 20px;
+  padding: 5px;
+  font-size: 10px;
+  width: 500px;
+  height: 200px;
+}
+
+#new_post submit {
+  margin-top: 20px;
+  float: left;
+  clear: both;
+}
+
+#edit textarea, input {
+  float: left;
+  clear: both;
+}
+
+#edit textarea {
+  width: 400px;
+  height: 200px;
+}
+
