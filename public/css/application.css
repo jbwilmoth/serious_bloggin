@@ -1,4 +1,4 @@
-.container {
+/*.container {
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
@@ -29,7 +29,7 @@ th {
   line-height: 80px;
   color: orange;
   text-decoration: none;
-}
+}*/
 
 .logo {
   float: left;
@@ -81,7 +81,7 @@ th {
   width: 100%;
 }
 
-#new_post input,textarea,label {
+/*#new_post input,textarea,label {
   float: left;
   clear: both;
 }
@@ -98,7 +98,7 @@ th {
   margin-top: 20px;
   float: left;
   clear: both;
-}
+}*/
 
 #edit textarea, input {
   float: left;

@@ -3,6 +3,6 @@
   <input id="post_id" class="<%= @post.id %> "name="id" type="text" style="display:none" value="<%= @post.id %>" />
   <textarea name="content"><%= @post.content %></textarea><br/><br/>
   <input type="submit" value="Save" id="save" />
-  <div style="clear:both"> <%= @post.updated_at %></div><br/>
+  <div> <%= @post.updated_at %></div><br/>
   <input type="submit" value="Save" />
 </form>

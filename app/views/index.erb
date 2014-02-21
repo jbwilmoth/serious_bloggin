@@ -1,6 +1,4 @@
 <div class="container">
-  <h1>Hello World!</h1>
-
   <% @posts.each do |post| %>
   <div class="post">
     <div id="<%= post.id %>">
@@ -8,12 +6,12 @@
       <span style="font-style:italic"><%= post.content %></span><br />
     </div>
     <div id="tags">
-      <span style="color:#orange"><%= post.created_at %></span>
+      <span><%= post.created_at %></span>
       <% post.tags.each do |tag| %>
         <%= tag.tag_name %>
       <% end %>
       <a id="delete" href= "/delete_post/" name="<%=post.id %>" >Delete</a>
-            <a id="edit" href= "/edit_post" name="<%= post.id %>">Edit</a>
+      <a id="edit" href= "/edit_post" name="<%= post.id %>">Edit</a>
     </div>
   </div>
   <% end %>
