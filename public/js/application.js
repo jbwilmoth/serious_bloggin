@@ -1,7 +1,29 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+  $("a#delete").click(function(event) {
+  	event.preventDefault();
+  	var id = $(this).attr("name");
+  	$.get("delete_post/" + id, function() {
+  		$("#" + id).fadeOut();
+  	});
+  });
+});
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+$(document).ready(function() {
+	$("a#edit").click(function(event) {
+		event.preventDefault();
+		var id = $(this).attr("name");
+		$.get("edit_post/" + id, function(data) {
+			$("#" + id).html(data);
+		});
+	});
+});
+
+$(document).ready(function() {
+  $("form#edit").submit(function(event) {
+      event.preventDefault();
+      var id =  $("#post_id").attr("class");
+      $.post("/save_post", $(this).serialize(), function(data) {
+        $('#' + id).html(data);
+      });
+  });
 });
